@@ -8,68 +8,12 @@ const alertVariants = cva(
   {
     variants: {
       color: {
-        default: "bg-primary text-primary-foreground",
-        secondary: "bg-secondary  text-secondary-foreground",
-        success: "bg-success text-success-foreground",
-        info: "bg-info text-info-foreground",
-        warning: "bg-warning text-warning-foreground",
         destructive: "bg-destructive text-destructive-foreground ",
-        dark: "bg-gray-950 text-slate-50 ",
-      },
-      variant: {
-        outline: "border border-current bg-background ",
-        soft: "text-current bg-opacity-10 border-current    ",
       },
     },
-    compoundVariants: [
-      ...["destructive", "success", "info", "warning", "dark"].map((color) => ({
-        variant: "outline",
-        color,
-        className: `text-${color} bg-transparent`,
-      })),
-      {
-        variant: "outline",
-        color: "secondary",
-        className: " text-default-700 dark:text-default-400  bg-transparent ",
-      },
 
-      {
-        variant: "outline",
-        color: "default",
-        className: "text-primary bg-transparent",
-      },
-      ...["info", "warning", "destructive", "success", "secondary"].map(
-        (color) => ({
-          variant: "soft",
-          color,
-          className: `text-${color}`,
-        })
-      ),
-      ...["info", "warning", "destructive", "success", "secondary"].map(
-        (color) => ({
-          variant: "ghost",
-          color,
-          className: `text-${color}`,
-        })
-      ),
-      {
-        variant: "ghost",
-        color: "default",
-        className: "text-primary",
-      },
-      {
-        variant: "soft",
-        color: "default",
-        className: "text-primary",
-      },
-      {
-        variant: "soft",
-        color: "secondary",
-        className: "text-card-foreground bg-opacity-40",
-      },
-    ],
     defaultVariants: {
-      color: "default",
+      color: "destructive",
     },
   }
 );
