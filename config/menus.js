@@ -17,14 +17,19 @@ export const menusConfig = {
         title: "Components",
       },
       {
-        title: "Button",
+        title: "Accordion",
         icon: DashBoard,
-        href: "/button",
+        href: "/accordion",
       },
       {
         title: "Alert",
         icon: DashBoard,
         href: "/alert",
+      },
+      {
+        title: "Button",
+        icon: DashBoard,
+        href: "/button",
       },
       {
         title: "Affix",
