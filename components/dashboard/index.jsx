@@ -1,13 +1,13 @@
 "use client";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import ReportsSnapshot from "./components/reports-snapshot";
-import CountryMap from "./components/country-map";
-import UserDeviceReport from "./components/user-device-report";
-import UserStats from "./components/user-stats-chart";
-import UsersStat from "./components/users-stat";
-import ReportsArea from "./components/reports-area";
-import TopTen from "./components/top-ten";
-import TopPage from "./components/top-page";
+import ReportsSnapshot from "./templates/reports-snapshot";
+import CountryMap from "./templates/country-map";
+import UserDeviceReport from "./templates/user-device-report";
+import UserStats from "./templates/user-stats-chart";
+import UsersStat from "./templates/users-stat";
+import ReportsArea from "./templates/reports-area";
+import TopTen from "./templates/top-ten";
+import TopPage from "./templates/top-page";
 
 
 const Dashboard = () => {
