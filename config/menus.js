@@ -43,6 +43,11 @@ export const menusConfig = {
         href: "/badge",
       },
       {
+        title: "Breadcrumb",
+        icon: DashBoard,
+        href: "/breadcrumb",
+      },
+      {
         title: "Button",
         icon: DashBoard,
         href: "/button",
