@@ -22,6 +22,12 @@ export const menusConfig = {
         href: "/accordion",
       },
       {
+        title: "Affix",
+        icon: DashBoard,
+        badge: "pro",
+        href: "#",
+      },
+      {
         title: "Alert",
         icon: DashBoard,
         href: "/alert",
@@ -30,12 +36,6 @@ export const menusConfig = {
         title: "Button",
         icon: DashBoard,
         href: "/button",
-      },
-      {
-        title: "Affix",
-        icon: DashBoard,
-        badge: "pro",
-        href: "#",
       },
       {
         title: "Watermark",
