@@ -15,47 +15,6 @@ const Avatar = React.forwardRef(({ className, ...props }, ref) => (
 ));
 Avatar.displayName = AvatarPrimitive.Root.displayName;
 
-const AvatarGroup = React.forwardRef(
-  ({ className, children, max, total, custom, countClass, ...props }, ref) => {
-    const avatars = React.Children.toArray(children);
-
-    return (
-      <div
-        ref={ref}
-        className={cn(
-          " relative w-max-content flex -space-x-3 avatarGroup items-center",
-          className
-        )}
-        {...props}
-      >
-        {avatars.slice(0, max).map((avatar, index) => (
-          <React.Fragment key={index}>{avatar}</React.Fragment>
-        ))}
-        {avatars.length > max && (
-          <>
-            {custom ? (
-              <div className=" inline-block" style={{ marginLeft: "8px" }}>
-                +{avatars.length - max} more
-              </div>
-            ) : (
-              <Avatar
-                className={cn(
-                  "ring-1 ring-background ring-offset-[2px]  ring-offset-background ",
-                  countClass
-                )}
-              >
-                <AvatarFallback className="font-normal">
-                  +{total ? total : avatars.length - max}
-                </AvatarFallback>
-              </Avatar>
-            )}
-          </>
-        )}
-      </div>
-    );
-  }
-);
-AvatarGroup.displayName = "AvatarGroup";
 
 const AvatarImage = React.forwardRef(({ className, ...props }, ref) => (
   <AvatarPrimitive.Image
@@ -78,4 +37,4 @@ const AvatarFallback = React.forwardRef(({ className, ...props }, ref) => (
 ));
 AvatarFallback.displayName = AvatarPrimitive.Fallback.displayName;
 
-export { Avatar, AvatarImage, AvatarFallback, AvatarGroup };
+export { Avatar, AvatarImage, AvatarFallback};
