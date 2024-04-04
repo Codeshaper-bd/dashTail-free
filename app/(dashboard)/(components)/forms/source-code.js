@@ -1,4 +1,4 @@
-export const inputCode = `
+export const inputCode = `<>
 <Input placeholder="Enter your name" />
 <Input type="text" placeholder="Username" id="userName" disabled />
 <div>
@@ -8,4 +8,6 @@ export const inputCode = `
 <div className="flex gap-4">
   <Input type="text" placeholder="with button" id="input" />
   <Button type="submit">Subscribe</Button>
-</div>`;
+</div>
+<>
+`;
