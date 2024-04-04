@@ -1,15 +1,14 @@
 "use client";
 import dynamic from "next/dynamic";
 const Chart = dynamic(() => import("react-apexcharts"), { ssr: false });
-import { useThemeStore } from "@/store";
+
 import { useTheme } from "next-themes";
-import { themes } from "@/config/thems";
 import { getGridConfig } from "@/lib/appex-chart-options";
+import { siteConfig } from "@/config/site";
 
 const UsersDataChart = ({ height = 160 }) => {
-  const { theme: config, setTheme: setConfig } = useThemeStore();
+
   const { theme: mode } = useTheme();
-  const theme = themes.find((theme) => theme.name === config);
 
   const series = [
     {
@@ -30,15 +29,11 @@ const UsersDataChart = ({ height = 160 }) => {
       curve: "smooth",
       width: 0,
     },
-    colors: [
-      `hsl(${theme?.cssVars[mode === "dark" ? "dark" : "light"].primary})`,
-    ],
+    colors: [siteConfig.sitePrimaryColor],
     tooltip: {
       theme: mode === "dark" ? "dark" : "light",
     },
-    grid: getGridConfig(
-      `hsl(${theme?.cssVars[mode === "dark" ? "dark" : "light"].chartGird})`
-    ),
+    grid: getGridConfig(mode === "dark" ? "#334155" : "#e2e8f0"),
     yaxis: {
       show: false,
     },
@@ -71,15 +66,13 @@ const UsersDataChart = ({ height = 160 }) => {
     },
   };
   return (
-    <>
       <Chart
         options={options}
         series={series}
         type="bar"
         height={height}
         width={"100%"}
-      />
-    </>
+    />
   );
 };
 

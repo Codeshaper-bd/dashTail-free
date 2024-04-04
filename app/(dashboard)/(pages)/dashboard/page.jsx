@@ -17,14 +17,13 @@ const Dashboard = () => {
         <div className="text-2xl font-medium text-default-800 ">
           Analytics Dashboard
         </div>
-
       </div>
       <div className="grid grid-cols-12  gap-6 ">
         <div className="col-span-12 lg:col-span-8">
           <ReportsSnapshot />
         </div>
         <div className="col-span-12 lg:col-span-4">
-          {/* <UsersStat /> */}
+          <UsersStat />
         </div>
       </div>
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
