@@ -53,6 +53,17 @@ export const menusConfig = {
         href: "/button",
       },
       {
+        title: "Calender",
+        icon: DashBoard,
+        href: "#",
+        badge: "pro",
+      },
+      {
+        title: "Card",
+        icon: DashBoard,
+        href: "/card",
+      },
+      {
         title: "Watermark",
         icon: DashBoard,
         badge: "pro",
