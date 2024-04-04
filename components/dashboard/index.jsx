@@ -2,7 +2,7 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import ReportsSnapshot from "./components/reports-snapshot";
 import CountryMap from "./components/country-map";
-// import UserDeviceReport from "./components/user-device-report";
+import UserDeviceReport from "./components/user-device-report";
 import UserStats from "./components/user-stats-chart";
 import UsersStat from "./components/users-stat";
 import ReportsArea from "./components/reports-area";
@@ -47,30 +47,25 @@ const Dashboard = () => {
             </CardTitle>
           </CardHeader>
           <CardContent>
-            {/* <UserDeviceReport /> */}
+            <UserDeviceReport />
           </CardContent>
         </Card>
       </div>
       <div className="col-span-2">
         <Card>
           <CardHeader className="border-none pb-0">
-            <div className="flex flex-wrap items-center gap-2">
-              <div className="flex-1 text-xl font-semibold text-default-900 whitespace-nowrap">
-                User By Country
-              </div>
-              <div className="flex-none">
-
-              </div>
+            <div className=" text-xl font-semibold text-default-900 ">
+              User By Country
             </div>
           </CardHeader>
           <CardContent className="px-5 pb-0">
-            {/* <CountryMap /> */}
+            <CountryMap />
           </CardContent>
         </Card>
       </div>
       <div className="grid grid-cols-12 gap-6">
         <div className="col-span-12 lg:col-span-4">
-          {/* <TopTen /> */}
+          <TopTen />
         </div>
         <div className="col-span-12 lg:col-span-8">
           <Card>
@@ -78,7 +73,7 @@ const Dashboard = () => {
               <CardTitle className="pt-2.5">Top Page/Post</CardTitle>
             </CardHeader>
             <CardContent className="px-0">
-              {/* <TopPage /> */}
+              <TopPage />
             </CardContent>
           </Card>
         </div>

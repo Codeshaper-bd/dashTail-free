@@ -129,7 +129,7 @@ const TopPage = () => {
                   {row.getVisibleCells().map((cell, index) => (
                     <TableCell
                       key={`toppage-cell-${index}`}
-                      className="text-sm text-default-700 border-b border-default-100 dark:border-default-200  last:text-end last:pr-6"
+                      className="text-sm text-default-700 border-b border-default-100 dark:border-default-200   last:text-end last:pr-6"
                     >
                       {flexRender(
                         cell.column.columnDef.cell,
