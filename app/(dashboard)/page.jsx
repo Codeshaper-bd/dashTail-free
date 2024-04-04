@@ -1,7 +1,9 @@
-import React from "react";
+import DashBoard from "@/components/dashboard";
 
 const page = () => {
-  return <div className="text-2xl font-semibold">Start Your Content...</div>;
+  return (
+    <DashBoard />
+  );
 };
 
 export default page;
