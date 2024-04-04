@@ -33,6 +33,11 @@ export const menusConfig = {
         href: "/alert",
       },
       {
+        title: "Avatar",
+        icon: DashBoard,
+        href: "/avatar",
+      },
+      {
         title: "Button",
         icon: DashBoard,
         href: "/button",
