@@ -10,7 +10,7 @@ export const menusConfig = {
       {
         title: "Dashboard",
         icon: DashBoard,
-        href: "/dashboard",
+        href: "/",
       },
       {
         isHeader: true,
@@ -57,6 +57,11 @@ export const menusConfig = {
         icon: DashBoard,
         badge: "pro",
         href: "#",
+      },
+      {
+        title: "Forms",
+        icon: DashBoard,
+        href: "/forms",
       },
     ],
   },
