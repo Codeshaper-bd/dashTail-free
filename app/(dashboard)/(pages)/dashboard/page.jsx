@@ -2,7 +2,7 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import ReportsSnapshot from "./components/reports-snapshot";
 import CountryMap from "./components/country-map";
-// import UserDeviceReport from "./components/user-device-report";
+import UserDeviceReport from "./components/user-device-report";
 import UserStats from "./components/user-stats-chart";
 import UsersStat from "./components/users-stat";
 import ReportsArea from "./components/reports-area";
@@ -47,7 +47,7 @@ const Dashboard = () => {
             </CardTitle>
           </CardHeader>
           <CardContent>
-            {/* <UserDeviceReport /> */}
+            <UserDeviceReport />
           </CardContent>
         </Card>
       </div>
