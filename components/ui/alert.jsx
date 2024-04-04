@@ -8,12 +8,14 @@ const alertVariants = cva(
   {
     variants: {
       color: {
+        default: "bg-primary text-primary-foreground",
+
         destructive: "bg-destructive text-destructive-foreground ",
       },
     },
 
     defaultVariants: {
-      color: "destructive",
+      color: "default",
     },
   }
 );
