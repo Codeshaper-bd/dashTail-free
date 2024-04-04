@@ -54,17 +54,12 @@ const Dashboard = () => {
       <div className="col-span-2">
         <Card>
           <CardHeader className="border-none pb-0">
-            <div className="flex flex-wrap items-center gap-2">
-              <div className="flex-1 text-xl font-semibold text-default-900 whitespace-nowrap">
+            <div className=" text-xl font-semibold text-default-900 ">
                 User By Country
-              </div>
-              <div className="flex-none">
-
-              </div>
             </div>
           </CardHeader>
           <CardContent className="px-5 pb-0">
-            {/* <CountryMap /> */}
+            <CountryMap />
           </CardContent>
         </Card>
       </div>

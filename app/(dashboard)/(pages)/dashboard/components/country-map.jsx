@@ -6,10 +6,10 @@ import img2 from "@/public/images/country/france.png";
 import img3 from "@/public/images/country/india.png";
 import img4 from "@/public/images/country/spain.png";
 import img5 from "@/public/images/country/bangladesh.png";
-// import img6 from "@/public/images/country/brazil.png";
+import img6 from "@/public/images/country/brazil.png";
 
-// import world from "../../../(map)/maps-vector/worldmap.json";
-// import { VectorMap } from "@south-paw/react-vector-maps";
+import world from "./worldmap.json";
+import { VectorMap } from "@south-paw/react-vector-maps";
 import Link from "next/link";
 
 const CountryMap = () => {
@@ -19,17 +19,17 @@ const CountryMap = () => {
     { name: "India", image: img3, user: 29703 },
     { name: "Spain", image: img4, user: 27533 },
     { name: "Bangladesh", image: img5, user: 27523 },
-    // { name: "Brazil", image: img6, user: 23289 },
+    { name: "Brazil", image: img6, user: 23289 },
   ];
 
   return (
     <div className="grid grid-cols-12 sm:gap-6 gap-4">
       <div className="col-span-12 md:col-span-8">
         <div className={`w-[full] h-[329px]`}>
-          {/* <VectorMap
+          <VectorMap
             {...world}
             className="h-full w-full object-fill dashtail-codeVmapWhite"
-          /> */}
+          /> 
         </div>
       </div>
       <div className="col-span-12 md:col-span-4 mt-9 md:mt-0">
