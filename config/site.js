@@ -14,4 +14,5 @@ export const siteConfig = {
   // sticky,  static, hidden
   sidebarBg: "none",
   radius: 0.5,
+  sitePrimaryColor: null,
 };
