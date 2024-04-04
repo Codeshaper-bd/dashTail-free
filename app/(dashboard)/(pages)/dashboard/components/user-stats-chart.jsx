@@ -2,15 +2,13 @@
 
 import dynamic from "next/dynamic";
 const Chart = dynamic(() => import("react-apexcharts"), { ssr: false });
-
-import { useThemeStore } from "@/store";
 import { useTheme } from "next-themes";
-import { themes } from "@/config/thems";
+import { siteConfig } from "@/config/site";
 
 const UserStats = ({ height = 250 }) => {
-  const { theme: config, setTheme: setConfig } = useThemeStore();
+
   const { theme: mode } = useTheme();
-  const theme = themes.find((theme) => theme.name === config);
+
   const series = [1200, 1400];
 
   const options = {
@@ -23,10 +21,7 @@ const UserStats = ({ height = 250 }) => {
     dataLabels: {
       enabled: false,
     },
-    colors: [
-      `hsl(${theme?.cssVars[mode === "dark" ? "dark" : "light"].primary})`,
-      `hsl(${theme?.cssVars[mode === "dark" ? "dark" : "light"].info})`,
-    ],
+    colors: [siteConfig.sitePrimaryColor, "#06B6D4"],
     tooltip: {
       theme: mode === "dark" ? "dark" : "light",
     },
@@ -42,30 +37,21 @@ const UserStats = ({ height = 250 }) => {
               show: true,
               fontSize: "14px",
               fontWeight: 600,
-              colors: `hsl(${theme?.cssVars[
-                  mode === "dark" || mode === "system" ? "dark" : "light"
-                ].chartLabel
-                })`,
+              colors: mode === "dark" ? "#94a3b8" : "#475569",
             },
             value: {
               show: true,
               label: "Total",
               fontSize: "14px",
               fontWeight: 600,
-              color: `hsl(${theme?.cssVars[
-                  mode === "dark" || mode === "system" ? "dark" : "light"
-                ].chartLabel
-                })`,
+              color: mode === "dark" ? "#94a3b8" : "#475569",
             },
             total: {
               show: true,
               label: "Total",
               fontSize: "16px",
               fontWeight: 600,
-              color: `hsl(${theme?.cssVars[
-                  mode === "dark" || mode === "system" ? "dark" : "light"
-                ].chartLabel
-                })`,
+              color: mode === "dark" ? "#94a3b8" : "#475569",
             },
           },
         },
@@ -74,10 +60,7 @@ const UserStats = ({ height = 250 }) => {
     legend: {
       position: "bottom",
       labels: {
-        colors: `hsl(${theme?.cssVars[
-            mode === "dark" || mode === "system" ? "dark" : "light"
-          ].chartLabel
-          })`,
+        colors: mode === "dark" ? "#94a3b8" : "#475569",
       },
     },
     padding: {
