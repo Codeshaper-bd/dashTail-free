@@ -5,25 +5,9 @@ const ColorAlert = () => {
       <Alert>
           <AlertDescription>I'm an alert with primary background color.!</AlertDescription>
       </Alert>
-      <Alert color="secondary">
-          <AlertDescription>I'm an alert with primary background color.!</AlertDescription>
-      </Alert>
-
-      <Alert color="warning">
-          <AlertDescription>I'm an alert with primary background color.!</AlertDescription>
-      </Alert>
-      <Alert color="success">
-          <AlertDescription>I'm an alert with primary background color.!</AlertDescription>
-      </Alert>
       <Alert color="destructive">
           <AlertDescription>I'm an alert with primary background color.!</AlertDescription>
-      </Alert>
-      <Alert color="info">
-          <AlertDescription>I'm an alert with primary background color.!</AlertDescription>
-      </Alert>
-      <Alert color="dark">
-          <AlertDescription>I'm an alert with primary background color.!</AlertDescription>
-      </Alert>  
+      </Alert> 
     </React.Fragment>
   )
 }
