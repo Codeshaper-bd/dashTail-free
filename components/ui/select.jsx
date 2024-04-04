@@ -5,110 +5,21 @@ import { cva } from "class-variance-authority";
 
 import { cn } from "@/lib/utils";
 const selectVariants = cva(
-  " w-full  px-3 h-10 text-sm flex [&>svg]:h-5 [&>svg]:w-5    justify-between items-center  read-only:bg-background  disabled:cursor-not-allowed disabled:opacity-50  transition duration-300 ",
+  " w-full rounded-lg border border-default-300  px-3 h-10 text-sm flex [&>svg]:h-5 [&>svg]:w-5 h-10 text-sm    justify-between items-center  read-only:bg-background  disabled:cursor-not-allowed disabled:opacity-50  transition duration-300 ",
   {
     variants: {
       color: {
         default:
           "border-default-300 text-default-500 focus:outline-none focus:border-default-500/50 disabled:bg-default-200  placeholder:text-accent-foreground/50 [&>svg]:stroke-default-600",
         primary:
-          "border-primary text-primary focus:outline-none focus:border-primary-700 disabled:bg-primary/30 disabled:placeholder:text-primary  placeholder:text-primary/70 [&>svg]:stroke-primary",
-        info: "border-info/50 text-info focus:outline-none focus:border-info-700 disabled:bg-info/30 disabled:placeholder:text-info  placeholder:text-info/70",
-        warning:
-          "border-warning/50 text-warning focus:outline-none focus:border-warning-700 disabled:bg-warning/30 disabled:placeholder:text-info  placeholder:text-warning/70",
-        success:
-          "border-success/50 text-success focus:outline-none focus:border-success-700 disabled:bg-success/30 disabled:placeholder:text-info  placeholder:text-success/70",
+          "border-primary border text-primary focus:outline-none focus:border-primary-700 disabled:bg-primary/30 disabled:placeholder:text-primary  placeholder:text-primary/70 [&>svg]:stroke-primary",
         destructive:
           "border-destructive/50 text-destructive focus:outline-none focus:border-destructive-700 disabled:bg-destructive/30 disabled:placeholder:text-destructive  placeholder:text-destructive/70",
-      },
-      variant: {
-        flat: "read-only:bg-default-500/10 ",
-        underline: "border-b",
-        bordered: "border",
-        faded: "border border-default-300 read-only:bg-default-100",
-        ghost: "border-0 focus:border",
-        "flat-underline": "read-only:bg-default-100 border-b",
-      },
-      shadow: {
-        none: "shadow-none",
-        xs: "shadow-sm",
-        sm: "shadow",
-        md: "shadow-md",
-        lg: "shadow-lg",
-        xl: "shadow-xl",
-        "2xl": "shadow-2xl",
-      },
-      radius: {
-        none: "rounded-none",
-        sm: "rounded",
-        md: "rounded-lg",
-        lg: "rounded-xl",
-        xl: "rounded-[20px]",
-      },
-      size: {
-        sm: "h-8 text-xs",
-        md: "h-9 text-xs",
-        lg: "h-10 text-sm",
-        xl: "h-12 text-base",
-      },
+      }
     },
-    compoundVariants: [
-      {
-        variant: "flat",
-        color: "primary",
-        className: "read-only:bg-primary/10",
-      },
-      {
-        variant: "flat",
-        color: "info",
-        className: "read-only:bg-info/10",
-      },
-      {
-        variant: "flat",
-        color: "warning",
-        className: "read-only:bg-warning/10",
-      },
-      {
-        variant: "flat",
-        color: "success",
-        className: "read-only:bg-success/10",
-      },
-      {
-        variant: "flat",
-        color: "destructive",
-        className: "read-only:bg-destructive/10",
-      },
-      {
-        variant: "faded",
-        color: "primary",
-        className: "read-only:bg-primary/10 border-primary/30",
-      },
-      {
-        variant: "faded",
-        color: "info",
-        className: "read-only:bg-info/10 border-info/30",
-      },
-      {
-        variant: "faded",
-        color: "warning",
-        className: "read-only:bg-warning/10 border-warning/30",
-      },
-      {
-        variant: "faded",
-        color: "success",
-        className: "read-only:bg-success/10 border-success/30",
-      },
-      {
-        variant: "faded",
-        color: "destructive",
-        className: "read-only:bg-destructive/10 border-destructive/30",
-      },
-    ],
+
     defaultVariants: {
       color: "default",
-      size: "lg",
-      variant: "bordered",
-      radius: "md",
     },
   }
 );
@@ -125,9 +36,6 @@ const SelectTrigger = React.forwardRef(
       className,
       children,
       color,
-      size,
-      radius,
-      variant,
       icon = <ChevronDown />,
       ...props
     },
@@ -136,7 +44,7 @@ const SelectTrigger = React.forwardRef(
     <SelectPrimitive.Trigger
       ref={ref}
       className={cn(
-        selectVariants({ color, size, radius, variant }),
+        selectVariants({ color }),
         className
       )}
       {...props}
