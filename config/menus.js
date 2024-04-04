@@ -17,6 +17,11 @@ export const menusConfig = {
         title: "Components",
       },
       {
+        title: "Button",
+        icon: DashBoard,
+        href: "/button",
+      },
+      {
         title: "Alert",
         icon: DashBoard,
         href: "/alert",
