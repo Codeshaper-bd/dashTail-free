@@ -26,7 +26,11 @@ const SingleMenuItem = ({ item, collapsed, hovered }) => {
               <item.icon className="w-5 h-5  " />
             </span>
             <div className="text-box flex-grow">{title}</div>
-            {badge && <Badge className=" rounded">{item.badge}</Badge>}
+            {badge && (
+              <Badge className=" rounded" color="info">
+                {item.badge}
+              </Badge>
+            )}
           </div>
         ) : (
           <div>
