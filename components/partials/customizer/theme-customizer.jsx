@@ -11,15 +11,7 @@ import {
   SheetTitle,
   SheetTrigger,
 } from "@/components/ui/sheet";
-import ThemeChange from "./theme-change";
-import SidebarChange from "./sidebar-change";
-import SidebarImage from "./sidebar-image";
-import SelectLayout from "./select-layout";
-import SelectTheme from "./select-theme";
-import HeaderStyle from "./header-style";
-import FooterStyle from "./footer-style";
-import { ScrollArea } from "@/components/ui/scroll-area";
-import RadiusInit from "./radius";
+
 import { Settings } from "@/components/svg";
 import Link from "next/link";
 
@@ -46,14 +38,10 @@ const ThemeCustomize = ({
         </SheetHeader>
         <ScrollArea className="h-[calc(100%-120px)] -mx-6 px-6">
           <div className=" space-y-8 mt-3">
-            <SelectLayout />
-            <SelectTheme />
-            <ThemeChange />
-            <SidebarChange />
-            <SidebarImage />
-            <RadiusInit />
-            <HeaderStyle />
-            <FooterStyle />
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum,
+            adipisci. Doloribus aspernatur, odit ex quam corporis reiciendis
+            quisquam quas blanditiis, iure sequi quae facere, voluptate possimus
+            quibusdam maiores sed saepe?
           </div>
         </ScrollArea>
         <SheetFooter className="py-4 gap-3 lg:flex justify-between hidden  ">

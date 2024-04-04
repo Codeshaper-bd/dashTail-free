@@ -1,18 +1,16 @@
 import React from "react";
-import { useSidebar, useThemeStore } from "@/store";
+import { useSidebar } from "@/store";
 import { cn } from "@/lib/utils";
 import FooterLayout from "./footer-layout";
 
 const Footer = ({}) => {
   const { collapsed } = useSidebar();
-  const { layout, footerType } = useThemeStore();
 
   return (
     <FooterLayout
       className={cn("", {
         "xl:ml-[248px]": !collapsed,
         "xl:ml-[72px]": collapsed,
-        "sticky bottom-0": footerType === "sticky",
       })}
     >
       <FooterContent />

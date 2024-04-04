@@ -3,7 +3,7 @@ import React from "react";
 import Header from "@/components/partials/header";
 import Sidebar from "@/components/partials/sidebar";
 import { cn } from "@/lib/utils";
-import { useSidebar, useThemeStore } from "@/store";
+import { useSidebar } from "@/store";
 import { motion, AnimatePresence } from "framer-motion";
 import { useRouter, usePathname } from "next/navigation";
 import Footer from "@/components/partials/footer";
@@ -15,7 +15,7 @@ import LayoutLoader from "@/components/layout-loader";
 const MainLayout = ({ children }) => {
   const { collapsed, sidebarType } = useSidebar();
   const [open, setOpen] = React.useState(false);
-  const { layout } = useThemeStore();
+
   const location = usePathname();
   const isMobile = useMediaQuery("(min-width: 768px)");
   const mounted = useMounted();
