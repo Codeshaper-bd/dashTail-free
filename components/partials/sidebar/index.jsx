@@ -1,6 +1,5 @@
 "use client";
 import React from "react";
-import { useSidebar, useThemeStore } from "@/store";
 import { cn } from "@/lib/utils";
 import { useMediaQuery } from "@/hooks/use-media-query";
 import MobileSidebar from "./mobile-sidebar";
@@ -14,7 +13,6 @@ const Sidebar = () => {
   }
   return (
     <div>
-      {" "}
       <ClassicSidebar />
     </div>
   );
