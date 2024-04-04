@@ -55,7 +55,7 @@ const Dashboard = () => {
         <Card>
           <CardHeader className="border-none pb-0">
             <div className=" text-xl font-semibold text-default-900 ">
-                User By Country
+              User By Country
             </div>
           </CardHeader>
           <CardContent className="px-5 pb-0">
@@ -65,7 +65,7 @@ const Dashboard = () => {
       </div>
       <div className="grid grid-cols-12 gap-6">
         <div className="col-span-12 lg:col-span-4">
-          {/* <TopTen /> */}
+          <TopTen />
         </div>
         <div className="col-span-12 lg:col-span-8">
           <Card>
@@ -73,7 +73,7 @@ const Dashboard = () => {
               <CardTitle className="pt-2.5">Top Page/Post</CardTitle>
             </CardHeader>
             <CardContent className="px-0">
-              {/* <TopPage /> */}
+              <TopPage />
             </CardContent>
           </Card>
         </div>

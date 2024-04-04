@@ -87,9 +87,8 @@ const socials = [
 const TopTen = () => {
   return (
     <Card>
-      <CardHeader className="flex-row items-center justify-between border-none pb-0">
+      <CardHeader className="border-none pb-0 pt-8">
         <CardTitle> Top 10 Referrals </CardTitle>
-
       </CardHeader>
       <CardContent className="px-0">
         <div>
