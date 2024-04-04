@@ -10,11 +10,16 @@ export const menusConfig = {
       {
         title: "Dashboard",
         icon: DashBoard,
-        href: "/",
+        href: "/dashboard",
       },
       {
         isHeader: true,
         title: "Components",
+      },
+      {
+        title: "Alert",
+        icon: DashBoard,
+        href: "/alert",
       },
       {
         title: "Affix",
