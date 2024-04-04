@@ -6,11 +6,9 @@ import UserDeviceReport from "./components/user-device-report";
 import UserStats from "./components/user-stats-chart";
 import UsersStat from "./components/users-stat";
 import ReportsArea from "./components/reports-area";
-import DashboardSelect from "@/components/dasboard-select";
 import TopTen from "./components/top-ten";
 import TopPage from "./components/top-page";
 
-import DatePickerWithRange from "@/components/date-picker-with-range";
 
 const Dashboard = () => {
   return (
@@ -19,7 +17,7 @@ const Dashboard = () => {
         <div className="text-2xl font-medium text-default-800 ">
           Analytics Dashboard
         </div>
-        <DatePickerWithRange />
+
       </div>
       <div className="grid grid-cols-12  gap-6 ">
         <div className="col-span-12 lg:col-span-8">
@@ -62,7 +60,7 @@ const Dashboard = () => {
                 User By Country
               </div>
               <div className="flex-none">
-                <DashboardSelect />
+
               </div>
             </div>
           </CardHeader>

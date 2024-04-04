@@ -2,7 +2,6 @@
 import { Eye } from "lucide-react";
 import Image from "next/image";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import DashboardDropdown from "@/components/dashboard-dropdown";
 import facebook from "@/public/images/social/facebook.png"
 import instagram from "@/public/images/social/instagram.png"
 import dribble from "@/public/images/social/dribble.png"
@@ -90,7 +89,7 @@ const TopTen = () => {
     <Card>
       <CardHeader className="flex-row items-center justify-between border-none pb-0">
         <CardTitle> Top 10 Referrals </CardTitle>
-        <DashboardDropdown />
+
       </CardHeader>
       <CardContent className="px-0">
         <div>

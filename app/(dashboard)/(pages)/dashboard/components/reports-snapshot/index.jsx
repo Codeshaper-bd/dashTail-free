@@ -3,7 +3,7 @@
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import ReportsChart from "./reports-chart";
 import { Card, CardContent, CardHeader } from "@/components/ui/card";
-import DashboardSelect from "@/components/dasboard-select";
+
 import { cn } from "@/lib/utils";
 import { siteConfig } from "@/config/site";
 
@@ -90,7 +90,7 @@ const ReportsSnapshot = () => {
             </span>
           </div>
           <div className="flex-none">
-            <DashboardSelect />
+
           </div>
         </div>
       </CardHeader>

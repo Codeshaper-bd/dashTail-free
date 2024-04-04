@@ -24,8 +24,6 @@ const ReportsChart = ({ series, chartColor, height = 300 }) => {
       width: 4,
     },
     colors: [chartColor],
-
-    // grid: getGridConfig("#cbd5e1"),
     grid: getGridConfig(mode === "dark" ? "#334155" : "#e2e8f0"),
     fill: {
       type: "gradient",
@@ -37,8 +35,8 @@ const ReportsChart = ({ series, chartColor, height = 300 }) => {
         stops: [50, 100, 0],
       },
     },
-    yaxis: getYAxisConfig("#cbd5e1"),
-    xaxis: getXAxisConfig("#cbd5e1"),
+    yaxis: getYAxisConfig(mode === "dark" ? "#94a3b8" : "#475569"),
+    xaxis: getXAxisConfig(mode === "dark" ? "#94a3b8" : "#475569"),
     padding: {
       top: 0,
       right: 0,
