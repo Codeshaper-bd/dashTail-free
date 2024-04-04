@@ -12,6 +12,22 @@ export const menusConfig = {
         icon: DashBoard,
         href: "/",
       },
+      {
+        isHeader: true,
+        title: "Components",
+      },
+      {
+        title: "Affix",
+        icon: DashBoard,
+        badge: "pro",
+        href: "#",
+      },
+      {
+        title: "Watermark",
+        icon: DashBoard,
+        badge: "pro",
+        href: "#",
+      },
     ],
   },
 };
