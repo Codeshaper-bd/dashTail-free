@@ -14,6 +14,7 @@ import {
 
 import { Settings } from "@/components/svg";
 import Link from "next/link";
+import { ScrollArea } from "@/components/ui/scroll-area";
 
 const ThemeCustomize = ({
   trigger = (

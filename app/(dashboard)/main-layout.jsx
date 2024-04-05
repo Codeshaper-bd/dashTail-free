@@ -12,6 +12,7 @@ import MobileSidebar from "@/components/partials/sidebar/mobile-sidebar";
 import HeaderSearch from "@/components/header-search";
 import { useMounted } from "@/hooks/use-mounted";
 import LayoutLoader from "@/components/layout-loader";
+import ThemeCustomizer from "@/components/partials/customizer/theme-customizer";
 const MainLayout = ({ children }) => {
   const { collapsed, sidebarType } = useSidebar();
   const [open, setOpen] = React.useState(false);
@@ -27,7 +28,6 @@ const MainLayout = ({ children }) => {
     <>
       <Header handleOpenSearch={() => setOpen(true)} />
       <Sidebar />
-
       <div
         className={cn("content-wrapper transition-all duration-150 ", {
           "xl:ml-[248px]": !collapsed,
@@ -51,6 +51,7 @@ const MainLayout = ({ children }) => {
         </div>
       </div>
       <Footer />
+      <ThemeCustomizer />
     </>
   );
 };
