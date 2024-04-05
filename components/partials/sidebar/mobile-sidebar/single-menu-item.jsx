@@ -44,7 +44,7 @@ const SingleMenuItem = ({ item, collapsed }) => {
             </span>
             <div className="text-box flex-grow">{title}</div>
             {badge && (
-              <Badge className=" rounded" color="info">
+              <Badge className=" rounded" color="secondary">
                 {item.badge}
               </Badge>
             )}

@@ -16,7 +16,7 @@ const SidebarLogo = ({ hovered }) => {
             </div>
           )}
         </div>
-        {sidebarType === "classic" && (!collapsed || hovered) && (
+        {(!collapsed || hovered) && (
           <div className="flex-none lg:block hidden">
             <div
               onClick={() => setCollapsed(!collapsed)}
