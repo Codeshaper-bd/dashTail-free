@@ -70,6 +70,10 @@ export const menusConfig = {
         href: "#",
       },
       {
+        isHeader: true,
+        title: "Forms Elements",
+      },
+      {
         title: "Forms",
         icon: DashBoard,
         href: "/forms",
