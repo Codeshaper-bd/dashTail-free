@@ -132,8 +132,7 @@ export const menusConfig = {
       {
         title: "Form Validation",
         icon: DashBoard,
-        badge: "pro",
-        href: "#",
+        href: "/form-validation",
       },
       {
         title: "Form Wizard",
