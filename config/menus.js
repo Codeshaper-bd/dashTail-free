@@ -120,6 +120,11 @@ export const menusConfig = {
         href: "/skeleton",
       },
       {
+        title: "Steps",
+        icon: DashBoard,
+        href: "/steps",
+      },
+      {
         title: "Watermark",
         icon: DashBoard,
         badge: "pro",
