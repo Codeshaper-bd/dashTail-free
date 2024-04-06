@@ -161,6 +161,46 @@ export const menusConfig = {
         badge: "pro",
         href: "#",
       },
+      {
+        isHeader: true,
+        title: "Tables",
+      },
+      {
+        title: "Simple Table",
+        icon: DashBoard,
+        href: "/simple-table",
+      },
+      {
+        title: "Tailwind UI Table",
+        icon: DashBoard,
+        href: "/tailwindui-table",
+      },
+      {
+        title: "Tanstack Table",
+        icon: DashBoard,
+        badge: "pro",
+        href: "#",
+      },
+      {
+        isHeader: true,
+        title: "Icons",
+      },
+      {
+        title: "Hero Icon",
+        icon: DashBoard,
+        href: "/icons-iconify",
+      },
+      {
+        title: "Lucide Icon",
+        icon: DashBoard,
+        href: "/icons-lucide",
+      },
+      {
+        title: "Custom Icon",
+        icon: DashBoard,
+        badge: "pro",
+        href: "#",
+      },
     ],
   },
 };
