@@ -115,6 +115,11 @@ export const menusConfig = {
         href: "/sheet",
       },
       {
+        title: "Skeleton",
+        icon: DashBoard,
+        href: "/skeleton",
+      },
+      {
         title: "Watermark",
         icon: DashBoard,
         badge: "pro",
