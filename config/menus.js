@@ -99,9 +99,26 @@ export const menusConfig = {
         title: "Forms Elements",
       },
       {
-        title: "Forms",
+        title: "Form Elements",
         icon: DashBoard,
         href: "/forms",
+      },
+      {
+        title: "Form Layout",
+        icon: DashBoard,
+        href: "/form-layout",
+      },
+      {
+        title: "Form Validation",
+        icon: DashBoard,
+        badge: "pro",
+        href: "#",
+      },
+      {
+        title: "Form Wizard",
+        icon: DashBoard,
+        badge: "pro",
+        href: "#",
       },
     ],
   },
