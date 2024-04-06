@@ -95,6 +95,11 @@ export const menusConfig = {
         badge: "pro",
       },
       {
+        title: "Pagination",
+        icon: DashBoard,
+        href: "/pagination",
+      },
+      {
         title: "Watermark",
         icon: DashBoard,
         badge: "pro",
