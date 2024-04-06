@@ -51,6 +51,10 @@ export const menusConfig = {
         icon: DashBoard,
         href: "#",
         badge: "pro",
+      }, {
+        title: "Products",
+        icon: DashBoard,
+        href: "/products",
       },
       {
         isHeader: true,
