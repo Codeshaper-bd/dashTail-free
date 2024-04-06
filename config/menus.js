@@ -69,6 +69,11 @@ export const menusConfig = {
         href: "/carousel",
       },
       {
+        title: "Combobox",
+        icon: DashBoard,
+        href: "/combobox",
+      },
+      {
         title: "Watermark",
         icon: DashBoard,
         badge: "pro",
