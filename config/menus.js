@@ -122,7 +122,7 @@ export const menusConfig = {
       {
         title: "Form Elements",
         icon: DashBoard,
-        href: "/forms",
+        href: "/forms-element",
       },
       {
         title: "Form Layout",
