@@ -89,6 +89,27 @@ export const menusConfig = {
         href: "/dialog",
       },
       {
+        title: "Kbd",
+        icon: DashBoard,
+        href: "#",
+        badge: "pro",
+      },
+      {
+        title: "Pagination",
+        icon: DashBoard,
+        href: "/pagination",
+      },
+      {
+        title: "Popover",
+        icon: DashBoard,
+        href: "/popover",
+      },
+      {
+        title: "Progress",
+        icon: DashBoard,
+        href: "/progress",
+      },
+      {
         title: "Watermark",
         icon: DashBoard,
         badge: "pro",
