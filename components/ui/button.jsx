@@ -33,6 +33,69 @@ const buttonVariants = cva(
         icon: "h-10 w-10",
       },
     },
+    compoundVariants: [
+      {
+        variant: "outline",
+        color: "destructive",
+        className:
+          "text-destructive hover:text-destructive-foreground hover:border-destructive hover:bg-destructive",
+      },
+      
+      {
+        variant: "outline",
+        color: "secondary",
+        className:
+          "text-muted-foreground dark:bg-transparent hover:bg-default-500  dark:hover:bg-default-500/50 border-default-500",
+      },
+      {
+        variant: "outline",
+        color: "default",
+        className:
+          "text-primary  hover:text-primary-foreground hover:border-primary hover:bg-primary",
+      },
+      {
+        variant: "outline",
+        color: "primary",
+        className: "text-primary  hover:text-primary-foreground",
+      },
+      {
+        variant: "soft",
+        color: "info",
+        className: "text-info hover:text-info-foreground",
+      },
+      {
+        variant: "soft",
+        color: "destructive",
+        className: "text-destructive  hover:text-destructive-foreground",
+      },
+      {
+        variant: "soft",
+        color: "secondary",
+        className:
+          "text-muted-foreground dark:bg-opacity-50  hover:bg-default-500/50  dark:hover:bg-opacity-100",
+      },
+      {
+        variant: "soft",
+        color: "default",
+        className: "text-primary",
+      },
+      {
+        variant: "ghost",
+        color: "default",
+        className: " text-primary  ",
+      },
+      {
+        variant: "ghost",
+        color: "secondary",
+        className:
+          " text-muted-foreground dark:bg-transparent hover:bg-default-500/50  dark:hover:bg-default-500/50",
+      },
+      {
+        variant: "ghost",
+        color: "destructive",
+        className: " text-destructive  hover:text-destructive-foreground ",
+      },
+    ],
 
     defaultVariants: {
       color: "default",

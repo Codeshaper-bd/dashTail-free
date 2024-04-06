@@ -79,6 +79,11 @@ export const menusConfig = {
         href: "/command",
       },
       {
+        title: "Dialog",
+        icon: DashBoard,
+        href: "/dialog",
+      },
+      {
         title: "Watermark",
         icon: DashBoard,
         badge: "pro",
