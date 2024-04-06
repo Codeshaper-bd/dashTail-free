@@ -109,6 +109,12 @@ export const menusConfig = {
         href: "/carousel",
       },
       {
+        title: "Color",
+        icon: DashBoard,
+        href: "#",
+        badge: "pro",
+      },
+      {
         title: "Combobox",
         icon: DashBoard,
         href: "/combobox",
@@ -194,6 +200,12 @@ export const menusConfig = {
       },
       {
         title: "Tree",
+        icon: DashBoard,
+        href: "#",
+        badge: "pro",
+      },
+      {
+        title: "Typography",
         icon: DashBoard,
         href: "#",
         badge: "pro",
