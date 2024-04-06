@@ -105,6 +105,11 @@ export const menusConfig = {
         href: "/popover",
       },
       {
+        title: "Progress",
+        icon: DashBoard,
+        href: "/progress",
+      },
+      {
         title: "Watermark",
         icon: DashBoard,
         badge: "pro",
