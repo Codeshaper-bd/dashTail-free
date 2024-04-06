@@ -131,6 +131,24 @@ export const menusConfig = {
         href: "/tabs",
       },
       {
+        title: "Timeline",
+        icon: DashBoard,
+        href: "#",
+        badge: "pro",
+      },
+      {
+        title: "Tour",
+        icon: DashBoard,
+        href: "#",
+        badge: "pro",
+      },
+      {
+        title: "Tree",
+        icon: DashBoard,
+        href: "#",
+        badge: "pro",
+      },
+      {
         title: "Watermark",
         icon: DashBoard,
         badge: "pro",
