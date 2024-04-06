@@ -199,9 +199,10 @@ export const menusConfig = {
         href: "/simple-table",
       },
       {
-        title: "Tailwind UI Table",
+        title: "TailwindUI Table",
         icon: DashBoard,
-        href: "/tailwindui-table",
+        badge: "pro",
+        href: "#",
       },
       {
         title: "Tanstack Table",
