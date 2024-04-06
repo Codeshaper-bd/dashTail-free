@@ -5,7 +5,9 @@ import InputElement from "./input-element"
 import CheckboxComponent from "./checkbox-component"
 import RadioComponent from "./radio-component"
 import SelectComponent from "./select-component"
-import { inputCode, checkboxCode, radioCode, selectCode } from "./source-code"
+import { inputCode, checkboxCode, radioCode, selectCode, fileUploader, switchCode } from "./source-code"
+import FileUploader from "./file-uploader";
+import SwitchComponent from "./switch-component"
 const FormPage = () => {
   return (
     <div className="grid grid-cols-2 gap-6">
@@ -14,15 +16,22 @@ const FormPage = () => {
           <InputElement />
         </div>
       </CardSnippet>
-      <CardSnippet title="Checkbox Component" code={checkboxCode}>
-        <CheckboxComponent />
-      </CardSnippet>
-      <CardSnippet title="Radio Component" code={radioCode}>
-        <RadioComponent />
-      </CardSnippet>
-      <CardSnippet title="Select Component" code={selectCode}>
+      <CardSnippet title="Select" code={selectCode}>
         <SelectComponent />
       </CardSnippet>
+      <CardSnippet title="File Uploader" code={fileUploader}>
+        <FileUploader />
+      </CardSnippet>
+      <CardSnippet title="Checkbox" code={checkboxCode}>
+        <CheckboxComponent />
+      </CardSnippet>
+      <CardSnippet title="Radio" code={radioCode}>
+        <RadioComponent />
+      </CardSnippet>
+      <CardSnippet title="Switch" code={switchCode}>
+        <SwitchComponent />
+      </CardSnippet>
+
     </div>
   );
 };

@@ -12,10 +12,6 @@ const InputElement = () => {
         <Label className="mb-3" htmlFor="inputId">Username </Label>
         <Input type="text" placeholder="Enter Your Name" id="inputId" />
       </div>
-      <div className="flex flex-col gap-3">
-        <Label>Upload File</Label>
-        <Input type="file" />
-      </div>
       <div className="flex gap-4">
         <Input type="text" placeholder="with button" id="input" />
         <Button type="submit">Subscribe</Button>
