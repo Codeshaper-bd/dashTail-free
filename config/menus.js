@@ -100,6 +100,11 @@ export const menusConfig = {
         href: "/pagination",
       },
       {
+        title: "Popover",
+        icon: DashBoard,
+        href: "/popover",
+      },
+      {
         title: "Watermark",
         icon: DashBoard,
         badge: "pro",
