@@ -142,6 +142,11 @@ export const menusConfig = {
         href: "/toast",
       },
       {
+        title: "Tooltip",
+        icon: DashBoard,
+        href: "/tooltip",
+      },
+      {
         title: "Tour",
         icon: DashBoard,
         href: "#",
