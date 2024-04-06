@@ -9,41 +9,18 @@ import {
   TooltipTrigger,
 } from "@/components/ui/tooltip";
 const sliderVariants = cva(
-  "relative flex w-full touch-none select-none  items-center   data-[disabled]:opacity-50 data-[orientation=vertical]:w-2 data-[orientation=vertical]:h-full  data-[orientation=vertical]:flex-col   ",
+  "relative flex w-full touch-none select-none h-2 rounded-lg  items-center   data-[disabled]:opacity-50 data-[orientation=vertical]:w-2 data-[orientation=vertical]:h-full  data-[orientation=vertical]:flex-col   ",
   {
     variants: {
       color: {
         primary:
           "[&_.range]:bg-primary  [&_.range-thumb]:border-secondary [&_.range-thumb]:drop-shadow-sm [&_.range-thumb]:bg-primary  focus-visible:[&_.range-thumb]:bg-primary",
-        info: "[&_.range]:bg-info [&_.range-thumb]:border-secondary [&_.range-thumb]:drop-shadow-sm [&_.range-thumb]:bg-info  focus-visible:[&_.range-thumb]:bg-info",
-        warning:
-          "[&_.range]:bg-warning [&_.range-thumb]:border-secondary [&_.range-thumb]:drop-shadow-sm [&_.range-thumb]:bg-warning  focus-visible:[&_.range-thumb]:bg-warning",
-        success:
-          "[&_.range]:bg-success [&_.range-thumb]:border-secondary [&_.range-thumb]:drop-shadow-sm [&_.range-thumb]:bg-success  focus-visible:[&_.range-thumb]:bg-success",
         destructive:
           "[&_.range]:bg-destructive [&_.range-thumb]:border-secondary [&_.range-thumb]:drop-shadow-sm [&_.range-thumb]:bg-destructive  focus-visible:[&_.range-thumb]:bg-destructive",
-        dark: "[&_.range]:bg-default-950 [&_.range-thumb]:border-secondary [&_.range-thumb]:drop-shadow-sm [&_.range-thumb]:bg-default-950  focus-visible:[&_.range-thumb]:bg-default-950",
-      },
-
-      radius: {
-        none: "rounded-none",
-        sm: "rounded",
-        md: "rounded-lg",
-        lg: "rounded-xl",
-        xl: "rounded-[20px]",
-      },
-      size: {
-        sm: "h-1",
-        md: "h-1.5",
-        lg: "h-2",
-        xl: "h-3 ",
       },
     },
-
     defaultVariants: {
       color: "primary",
-      size: "lg",
-      radius: "md",
     },
   }
 );
@@ -53,8 +30,6 @@ const Slider = React.forwardRef(
     {
       className,
       color,
-      size,
-      radius,
       showTooltip,
       showSteps,
       step = 1,
@@ -120,7 +95,7 @@ const Slider = React.forwardRef(
       <>
         <SliderPrimitive.Root
           ref={ref}
-          className={cn(sliderVariants({ color, size, radius }), className)}
+          className={cn(sliderVariants({ color }), className)}
           onValueChange={(newValues) => {
             console.log(newValues);
             const roundedValue = Math.round(newValues[0]);
