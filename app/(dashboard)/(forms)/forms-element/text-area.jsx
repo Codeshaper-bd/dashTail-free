@@ -12,14 +12,15 @@ const TextAreaComponents = () => {
         <div className="text-sm font-medium text-default-900 mb-2">Disabled</div>
         <Textarea placeholder="This textarea is disabled" rows="3" disabled />
       </div>
+
       <div>
         <div className="text-sm font-medium text-default-900 mb-2">Read Only</div>
-        <Textarea rows="3" readOnly >
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad quos, necessitatibus est quis minima illum. Ullam expedita quo explicabo sapiente.
+        <Textarea rows="3" readOnly defaultValue=" Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad quos, necessitatibus est quis minima illum. Ullam expedita quo explicabo sapiente.">
+
         </Textarea>
       </div>
       <div>
-        <Label className="mb-2" for="description">Required  Textarea<span className="text-destructive">*</span> </Label>
+        <Label className="mb-2" htmlFor="description">Required  Textarea<span className="text-destructive">*</span> </Label>
         <Textarea placeholder="Description..." id="description" rows="3" required />
       </div>
       <div>
@@ -33,7 +34,7 @@ const TextAreaComponents = () => {
       <div>
         <div className="text-sm font-medium text-default-900 mb-2">Destructive</div>
         <Textarea placeholder="Type Here.." color="destructive" />
-      </div>
+      </div> 
     </div>
   );
 };

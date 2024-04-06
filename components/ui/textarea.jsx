@@ -15,10 +15,8 @@ export const textareaVariants = cva(
           "border-primary text-primary focus:outline-none focus:border-primary-700 disabled:bg-primary/30 disabled:placeholder:text-primary  placeholder:text-primary/70",
         destructive:
           "border-destructive/50 text-destructive focus:outline-none focus:border-destructive-700 disabled:bg-destructive/30 disabled:placeholder:text-destructive  placeholder:text-destructive/70",
-      },
-
+      }
     },
-
 
     defaultVariants: {
       color: "default",

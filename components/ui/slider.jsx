@@ -124,7 +124,7 @@ const Slider = React.forwardRef(
 
           {value.map((nn, index) => {
             return (
-              <>
+              <React.Fragment key={`slider-${index}`}>
                 {showTooltip ? (
                   <TooltipProvider disableHoverableContent>
                     <Tooltip>
@@ -145,7 +145,7 @@ const Slider = React.forwardRef(
                     className="block h-5 w-5 cursor-pointer rounded-full ring-2 ring-background range-thumb  focus-visible:ring-4 ring-offset-background transition-colors focus-visible:outline-none   disabled:pointer-events-none disabled:opacity-50 "
                   />
                 )}
-              </>
+              </React.Fragment>
             );
           })}
           {marks?.length > 0 &&
