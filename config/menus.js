@@ -137,6 +137,11 @@ export const menusConfig = {
         badge: "pro",
       },
       {
+        title: "Toast",
+        icon: DashBoard,
+        href: "/toast",
+      },
+      {
         title: "Tour",
         icon: DashBoard,
         href: "#",
