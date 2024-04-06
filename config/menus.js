@@ -110,6 +110,16 @@ export const menusConfig = {
         href: "/progress",
       },
       {
+        title: "Sheet",
+        icon: DashBoard,
+        href: "/sheet",
+      },
+      {
+        title: "Skeleton",
+        icon: DashBoard,
+        href: "/skeleton",
+      },
+      {
         title: "Watermark",
         icon: DashBoard,
         badge: "pro",
